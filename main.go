@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-	"github/rigel-developer/golang-course/ejercicios"
-	"runtime"
+	"github/rigel-developer/golang-course/files"
 )
 
 func main() {
@@ -13,25 +11,36 @@ func main() {
 	// estado, texto := variables.ConviertoATexto(123)
 	// fmt.Println(estado, texto)
 
-	if os := runtime.GOOS; os == "windows" {
-		fmt.Println("El sistema operativo es: " + os)
-	} else {
-		fmt.Println("El sistema operativo no es windows, es: " + os)
-	}
+	// if os := runtime.GOOS; os == "windows" {
+	// 	fmt.Println("El sistema operativo es: " + os)
+	// } else {
+	// 	fmt.Println("El sistema operativo no es windows, es: " + os)
+	// }
 
-	switch os := runtime.GOOS; os {
-	case "linux":
-		fmt.Println("El sistema operativo es: " + os)
-	case "windows":
-		fmt.Println("El sistema operativo es: " + os)
-	case "darwin":
-		fmt.Println("El sistema operativo es: " + os)
-	default:
-		fmt.Println("El sistema operativo no es windows, es: " + os)
-	}
+	// switch os := runtime.GOOS; os {
+	// case "linux":
+	// 	fmt.Println("El sistema operativo es: " + os)
+	// case "windows":
+	// 	fmt.Println("El sistema operativo es: " + os)
+	// case "darwin":
+	// 	fmt.Println("El sistema operativo es: " + os)
+	// default:
+	// 	fmt.Println("El sistema operativo no es windows, es: " + os)
+	// }
 
-	number, mensaje := ejercicios.Ejercicio01("fff")
-	fmt.Println(number, mensaje)
+	// number, mensaje := ejercicios.Ejercicio01("1000")
+	// fmt.Println(number, mensaje)
+
+	// teclado.IngresoNumeros()
+
+	// iteraciones.Iterar()
+
+	// fmt.Println(ejercicios.MultiplicationTable())
+
+	// files.GrabarTable()
+	// files.SumaTabla()
+	files.LeerArchivo()
+
 	// Define el enrutador
 	// router := http.NewServeMux()
 
