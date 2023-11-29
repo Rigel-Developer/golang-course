@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github/rigel-developer/golang-course/arreglos_slices"
+	"github/rigel-developer/golang-course/mapas"
 )
 
 func main() {
@@ -47,6 +47,8 @@ func main() {
 
 	// funciones.Exponencia(10)
 
-	arreglos_slices.CapacidadSlice()
+	// arreglos_slices.CapacidadSlice()
+
+	mapas.MuestroMapas()
 
 }
