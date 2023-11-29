@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github/rigel-developer/golang-course/files"
+	"github/rigel-developer/golang-course/funciones"
 )
 
 func main() {
@@ -39,7 +39,9 @@ func main() {
 
 	// files.GrabarTable()
 	// files.SumaTabla()
-	files.LeerArchivo()
+	// files.LeerArchivo()
+
+	funciones.CalculosMatematicos()
 
 	// Define el enrutador
 	// router := http.NewServeMux()
