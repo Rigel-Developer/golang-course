@@ -29,6 +29,6 @@ func RestoVariables() {
 
 func ConviertoATexto(numero int) (bool, string) {
 	// texto := fmt.Sprintf("%d", numero)
-	texto := strconv.Itoa(numero)
+	texto := strconv.Itoa(numero) //Itoa function converts int to string
 	return true, texto
 }

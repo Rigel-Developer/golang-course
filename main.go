@@ -2,15 +2,36 @@ package main
 
 import (
 	"fmt"
-	"github/rigel-developer/golang-course/variables"
+	"github/rigel-developer/golang-course/ejercicios"
+	"runtime"
 )
 
 func main() {
 	//first example
 	// variables.MuestraEnteros()
-	estado, texto := variables.ConviertoATexto(123)
-	fmt.Println(estado, texto)
 
+	// estado, texto := variables.ConviertoATexto(123)
+	// fmt.Println(estado, texto)
+
+	if os := runtime.GOOS; os == "windows" {
+		fmt.Println("El sistema operativo es: " + os)
+	} else {
+		fmt.Println("El sistema operativo no es windows, es: " + os)
+	}
+
+	switch os := runtime.GOOS; os {
+	case "linux":
+		fmt.Println("El sistema operativo es: " + os)
+	case "windows":
+		fmt.Println("El sistema operativo es: " + os)
+	case "darwin":
+		fmt.Println("El sistema operativo es: " + os)
+	default:
+		fmt.Println("El sistema operativo no es windows, es: " + os)
+	}
+
+	number, mensaje := ejercicios.Ejercicio01("fff")
+	fmt.Println(number, mensaje)
 	// Define el enrutador
 	// router := http.NewServeMux()
 
