@@ -43,7 +43,9 @@ func main() {
 
 	// funciones.CalculosMatematicos()
 
-	funciones.Closures()
+	// funciones.Closures()
+
+	funciones.Exponencia(10)
 
 	// Define el enrutador
 	// router := http.NewServeMux()
