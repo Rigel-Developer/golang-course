@@ -1,0 +1,5 @@
+# air.toml
+root = "."
+exclude_dir = ["vendor", ".git"]
+build_args = ["-o", "bin/app"]
+run_cmd = "bin/app"
