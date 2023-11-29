@@ -41,7 +41,9 @@ func main() {
 	// files.SumaTabla()
 	// files.LeerArchivo()
 
-	funciones.CalculosMatematicos()
+	// funciones.CalculosMatematicos()
+
+	funciones.Closures()
 
 	// Define el enrutador
 	// router := http.NewServeMux()
