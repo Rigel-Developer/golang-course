@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github/rigel-developer/golang-course/users"
+	"github/rigel-developer/golang-course/ejer_interfaces"
+	"github/rigel-developer/golang-course/modelos"
 )
 
 func main() {
@@ -50,6 +51,12 @@ func main() {
 	// arreglos_slices.CapacidadSlice()
 
 	// mapas.MuestroMapas()
-	users.AltaUsuario()
+
+	// users.AltaUsuario()
+
+	pedro := new(modelos.Hombre)
+	pedro.Vivo = false
+	// camila := new(modelos.Mujer)
+	ejer_interfaces.HumanoRespirando(pedro)
 
 }
