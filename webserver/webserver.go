@@ -1,9 +1,13 @@
 package webserver
 
-import "net/http"
+import (
+	"github/rigel-developer/golang-course/middleware"
+	"net/http"
+)
 
 func MiWebServer() {
-	http.HandleFunc("/", home)
+
+	http.HandleFunc("/", middleware.MiMiddleware(home))
 	http.ListenAndServe(":8080", nil)
 }
 
