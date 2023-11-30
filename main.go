@@ -62,9 +62,12 @@ func main() {
 
 	// deferkeyword.VemosPanic()
 
-	go goroutines.MiNombreLentooo("Rigel Developer")
+	canal1 := make(chan bool)
+	go goroutines.MiNombreLentooo("Rigel Developer", canal1)
 	fmt.Println("Estoy aqui")
-	var x string
-	fmt.Scanln(&x)
+	defer func() {
+		res := <-canal1
+		fmt.Println(res)
+	}()
 
 }
