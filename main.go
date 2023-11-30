@@ -1,7 +1,8 @@
 package main
 
 import (
-	deferkeyword "github/rigel-developer/golang-course/deferKeyword"
+	"fmt"
+	"github/rigel-developer/golang-course/goroutines"
 )
 
 func main() {
@@ -59,6 +60,11 @@ func main() {
 	// camila.Vivo = true
 	// ejer_interfaces.HumanoRespirando(pedro)
 
-	deferkeyword.VemosPanic()
+	// deferkeyword.VemosPanic()
+
+	go goroutines.MiNombreLentooo("Rigel Developer")
+	fmt.Println("Estoy aqui")
+	var x string
+	fmt.Scanln(&x)
 
 }
