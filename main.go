@@ -1,8 +1,7 @@
 package main
 
 import (
-	"github/rigel-developer/golang-course/ejer_interfaces"
-	"github/rigel-developer/golang-course/modelos"
+	deferkeyword "github/rigel-developer/golang-course/deferKeyword"
 )
 
 func main() {
@@ -54,9 +53,12 @@ func main() {
 
 	// users.AltaUsuario()
 
-	pedro := new(modelos.Hombre)
-	pedro.Vivo = false
+	// pedro := new(modelos.Hombre)
+	// pedro.Vivo = false
 	// camila := new(modelos.Mujer)
-	ejer_interfaces.HumanoRespirando(pedro)
+	// camila.Vivo = true
+	// ejer_interfaces.HumanoRespirando(pedro)
+
+	deferkeyword.VemosPanic()
 
 }
