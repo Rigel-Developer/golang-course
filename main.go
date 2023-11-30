@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github/rigel-developer/golang-course/mapas"
+	"github/rigel-developer/golang-course/users"
 )
 
 func main() {
@@ -49,6 +49,7 @@ func main() {
 
 	// arreglos_slices.CapacidadSlice()
 
-	mapas.MuestroMapas()
+	// mapas.MuestroMapas()
+	users.AltaUsuario()
 
 }
