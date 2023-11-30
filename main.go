@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"github/rigel-developer/golang-course/goroutines"
-)
+import "github/rigel-developer/golang-course/webserver"
 
 func main() {
 	//first example
@@ -62,12 +59,15 @@ func main() {
 
 	// deferkeyword.VemosPanic()
 
-	canal1 := make(chan bool)
-	go goroutines.MiNombreLentooo("Rigel Developer", canal1)
-	fmt.Println("Estoy aqui")
-	defer func() {
-		res := <-canal1
-		fmt.Println(res)
-	}()
+	//*rutines and channels
+	// canal1 := make(chan bool)
+	// go goroutines.MiNombreLentooo("Rigel Developer", canal1)
+	// fmt.Println("Estoy aqui")
+	// defer func() {
+	// 	res := <-canal1
+	// 	fmt.Println(res)
+	// }()
+
+	webserver.MiWebServer()
 
 }
