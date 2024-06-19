@@ -1,6 +1,6 @@
 package main
 
-import "github/rigel-developer/golang-course/webserver"
+import "fmt"
 
 func main() {
 	//first example
@@ -68,6 +68,33 @@ func main() {
 	// 	fmt.Println(res)
 	// }()
 
-	webserver.MiWebServer()
+	// webserver.MiWebServer()
 
+	// Initialize a map for the integer values
+	ints := map[string]int64{
+		"first":  34,
+		"second": 12,
+	}
+
+	// Initialize a map for the float values
+	floats := map[string]float64{
+		"first":  35.98,
+		"second": 26.99,
+	}
+
+	fmt.Printf("Non-Generic Sums: %v and %v\n",
+		SumIntsOrFloats(ints),
+		SumIntsOrFloats(floats),
+	)
+
+}
+
+// SumIntsOrFloats calculates the sum of integers or floats in a map.
+// The key type K must be comparable, and the value type V must be either int64 or float64.
+func SumIntsOrFloats[K comparable, V int64 | float64](m map[K]V) V {
+	var s V
+	for _, v := range m {
+		s += v
+	}
+	return s
 }

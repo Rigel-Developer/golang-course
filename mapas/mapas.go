@@ -17,7 +17,8 @@ func MuestroMapas() {
 		"Barcelona":    39,
 		"Real Madrid":  38,
 		"Chivas":       37,
-		"Boca Juniors": 30}
+		"Boca Juniors": 30,
+	}
 
 	fmt.Println(campeonato)
 
