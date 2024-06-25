@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github/rigel-developer/golang-course/goroutines"
+)
 
 func main() {
 	//first example
@@ -45,7 +48,7 @@ func main() {
 
 	// funciones.Exponencia(10)
 
-	// arreglos_slices.CapacidadSlice()
+	// arreglos_slices.MuestroSlice()
 
 	// mapas.MuestroMapas()
 
@@ -67,7 +70,7 @@ func main() {
 	// 	res := <-canal1
 	// 	fmt.Println(res)
 	// }()
-
+	goroutines.CompleteTask()
 	// webserver.MiWebServer()
 
 	// Initialize a map for the integer values

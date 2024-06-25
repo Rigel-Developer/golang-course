@@ -13,11 +13,15 @@ func MuestroSlice() {
 	porcion4 := tabla2[2:7]
 	porcion0 := tabla2[:]
 
+	newPorcion := porcion3[2:3]
+	newPorcion[0] = 100
+
 	fmt.Println(porcion)
 	fmt.Println(porcion2)
 	fmt.Println(porcion3)
 	fmt.Println(porcion4)
 	fmt.Println(porcion0)
+	fmt.Println(newPorcion)
 }
 
 func CapacidadSlice() {
