@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github/rigel-developer/golang-course/goroutines"
+	pricecalculator "github/rigel-developer/golang-course/projects/price-calculator"
 )
 
 func main() {
@@ -70,7 +70,13 @@ func main() {
 	// 	res := <-canal1
 	// 	fmt.Println(res)
 	// }()
-	goroutines.CompleteTask()
+	// goroutines.CompleteTask()
+
+	// prices := []float64{100, 200, 300}
+	// taxRates := []float64{0.1, 0.2, 0.3}
+
+	// pricecalculator.CalculatePrice(prices, taxRates)
+	pricecalculator.CalculatePriceV2()
 	// webserver.MiWebServer()
 
 	// Initialize a map for the integer values
